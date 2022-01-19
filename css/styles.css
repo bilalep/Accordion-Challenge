@@ -29,9 +29,9 @@ body{
     width: 900px;
     background: white;
     border-radius: 20px;
-    box-shadow: 0px 11px 31px -5px rgba(0,0,0,0.30);
-    -webkit-box-shadow: 0px 11px 31px -5px rgba(0,0,0,0.30);
-    -moz-box-shadow: 0px 11px 31px -5px rgba(0,0,0,0.30);
+    box-shadow: 0 11px 31px -5px rgba(0,0,0,0.30);
+    -webkit-box-shadow: 0 11px 31px -5px rgba(0,0,0,0.30);
+    -moz-box-shadow: 0 11px 31px -5px rgba(0,0,0,0.30);
 }
 
 .overflow-hidden-div{
@@ -57,6 +57,10 @@ body{
     width: 108%;
     right: 50px;
     bottom: 70px;
+}
+
+.mobile-img{
+    display: none;
 }
 
 .box-img{
@@ -143,4 +147,33 @@ body{
 }
 .attribution a {
     color: hsl(256, 100%, 50%);
+}
+
+@media (max-width: 768px) {
+
+    .desktop-img{
+        display: none;
+    }
+
+    .mobile-img {
+        display: inline;
+    }
+
+    .mobile-bg {
+        position: absolute;
+        top: 0;
+    }
+
+    .mobile-illustration{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .main-container{
+        height: 800px;
+        width: 350px;
+        margin: 50px;
+    }
+    
 }
